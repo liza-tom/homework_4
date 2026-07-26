@@ -72,16 +72,28 @@ public class Main {
 
         //task 7
         int one = 5;
-        int two = 3;
-        int three = 1;
+        int two = 2;
+        int three = 5;
         if (one > two && one > three) {
             System.out.println("Самое большое число " + one);
+        }
+        if (one == two && one > three) {
+            System.out.println("Самие большие совпадают -  " + one);
         }
         if (two > one && two > three) {
             System.out.println("Самое большое число " + two);
         }
+        if (two > one && two == three) {
+            System.out.println("Самие большие совпадают -  " + two);
+        }
         if (three > one && three > two) {
             System.out.println("Самое большое число " + three);
+        }
+        if (three == one && three > two) {
+            System.out.println("Самие большие совпадают -  " + three);
+        }
+        if (three == one && three == two){
+            System.out.println("Все числа равны " + three);
         }
     }
 }
