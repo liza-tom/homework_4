@@ -32,24 +32,24 @@ public class Main {
         //task 4
         int age2 = 9;
         if (age2 >= 2 && age2 <= 6) {
-            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в детский сад");
+            System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить в детский сад");
         }
         if (age2 >= 7 && age2 <= 17) {
-            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в школу");
+            System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить в школу");
         }
         if (age2 >= 18 && age2 <= 24) {
-            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в университет");
+            System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить в университет");
         }
         if (age2 > 24) {
-            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить на работу");
+            System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить на работу");
         }
 
         //task 5
         int ageForAttractions = 6;
-        if (ageForAttractions <= 5) {
+        if (ageForAttractions < 5) {
             System.out.println("Если возраст ребенка равен " + ageForAttractions + ", то ему нельзя кататься на аттракционе");
         }
-        if (ageForAttractions > 5 && ageForAttractions <= 14) {
+        if (ageForAttractions >= 5 && ageForAttractions <= 14) {
             System.out.println("Если возраст ребенка равен " + ageForAttractions + ", то ему можно кататься на аттракционе в сопровождении взрослого");
         }
         if (ageForAttractions > 14) {
@@ -66,7 +66,7 @@ public class Main {
         if (amountOfPeople >= seats && amountOfPeople < capacity) {
             System.out.println("В вагоне есть стоячее место");
         }
-        if (amountOfPeople == capacity) {
+        if (amountOfPeople >= capacity) {
             System.out.println("Вагон полностью забит");
         }
 
